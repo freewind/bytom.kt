@@ -16,11 +16,16 @@ mainClassName = 'example.Hello'
 defaultTasks 'run'
 
 repositories {
+    mavenLocal()
     mavenCentral()
 }
 
 dependencies {
     compile "org.jetbrains.kotlin:kotlin-stdlib:$kotlin_version"
+    compile "org.apache.commons:commons-lang3:3.7"
+    compile "in.freewind:bytom-exports-go-functions:0.2"
+    compile "commons-io:commons-io:2.6"
+    compile 'commons-codec:commons-codec:1.11'
     testCompile "junit:junit:4.11"
     testCompile 'org.assertj:assertj-core:3.9.0'
     testCompile "org.jetbrains.kotlin:kotlin-test-junit:$kotlin_version"
