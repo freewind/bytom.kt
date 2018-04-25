@@ -19,6 +19,7 @@ Progress:
 Setup
 -----
 
+1. Setup Bytom <https://github.com/Bytom/bytom>, run a Bytom node successfully. For better developing, change the port from `46657` to `46666` (in file `config.toml`)
 1. Setup [bytom-exports-go-functions](https://github.com/freewind/bytom-exports-go-functions) first, follow the README there
 2. Setup this project:
 
@@ -33,3 +34,5 @@ export GOROOT=$(go env GOROOT)
 ```
 
 Since it's in very early development, it's better for you to run the classes in IDE directly.
+
+Please notice I use port `46666` in this project to connect real bytom's node.
